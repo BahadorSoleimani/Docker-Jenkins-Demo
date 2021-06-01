@@ -2,7 +2,7 @@ pipeline {
 
   environment {
 
-    registry = "bahadorsoleimani/devopsproject"
+    registry = "bahadorsoleimani / devopsproject"
 
     registryCredential = 'docker-creds'
 
@@ -13,16 +13,6 @@ pipeline {
   agent any
 
   stages {
-
-    stage('Cloning Git') {
-
-      steps {
-
-        git 'https://github.com/BahadorSoleimani/Docker-Jenkins-Demo.git'
-
-      }
-
-    }
 
     stage('Building image') {
 
